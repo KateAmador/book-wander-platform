@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app-master')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio | Book Wander</title>
-</head>
+@section('content')
 
-<body>
-    <h1>HOME</h1>
+    <h1 class="container">HOME</h1>
 
     @auth
     <p>Bienvenido {{auth()->user()->first_name }}</p>
@@ -20,6 +14,5 @@
     @guest
     <p>Para ver el contenido <a href="/login">Iniciar sesion</a></p>
     @endguest
-</body>
 
-</html>
+@endsection
