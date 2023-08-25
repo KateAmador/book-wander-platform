@@ -23,7 +23,7 @@ class LoginController extends Controller
 
         if (!Auth::attempt($credentials)) {
             return redirect('/login')
-                ->withErrors(trans('auth.failed'));
+                ->withErrors(trans('Las credenciales no coinciden'));
         }
 
         $user = Auth::user();
