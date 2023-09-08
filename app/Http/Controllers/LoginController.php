@@ -12,14 +12,14 @@ class LoginController extends Controller
     public function show()
     {
         if (Auth::check()) {
-            return redirect('/home');
+            return redirect('/');
         }
         return view('auth.login');
     }
 
     public function login(LoginRequest $request)
     {
-        $credentials = $request->only('email', 'password');  // Use only email and password
+        $credentials = $request->only('email', 'password');
 
         if (!Auth::attempt($credentials)) {
             return redirect('/login')
@@ -33,6 +33,6 @@ class LoginController extends Controller
 
     protected function authenticated(Request $request, $user)
     {
-        return redirect('/home');
+        return redirect('/');
     }
 }
