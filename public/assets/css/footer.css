@@ -1,0 +1,148 @@
+footer {
+    background-color: #15326c;
+    color: #fff;
+}
+
+.container-footer-all {
+    width: 100%;
+}
+
+.container-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container-body a {
+    margin: 0 0.5rem 0 0.5rem;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 3px solid transparent;
+}
+
+.container-body a:hover {
+    border-bottom-color: #f6d25c;
+}
+
+.colunm1 {
+    max-width: 30rem;
+}
+
+.colunm1 p {
+    text-align: justify;
+    margin-right: 3rem;
+    margin-top: 2rem;
+}
+
+.colunm1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container-social {
+    margin-top: 2rem;
+}
+
+.column2,
+.column3 {
+    max-width: 25rem;
+}
+
+.colunm1,
+.column2,
+.column3 {
+    flex-basis: 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.row,
+.row2 {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.row2 label {
+    margin-left: 1rem;
+}
+
+.row a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.row img {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+.container-social {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+}
+
+.social-item img {
+    margin-right: 10px;
+}
+
+
+.container-contact {
+    margin-top: 2rem;
+}
+
+.container-footer {
+    padding: 2rem;
+}
+
+.container-footer {
+    background-color: #0b1c3f;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer a {
+    margin: 0 0.5rem 0 0.5rem;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 3px solid transparent;
+}
+
+.footer a:hover {
+    border-bottom-color: #f6d25c;
+}
+
+@media only screen and (max-width: 767px) {
+    .container-body,
+    .container-footer {
+        display: block;
+    }
+
+    .row,
+    .row2 {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .container-body h3 {
+        text-align: center;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .informacion {
+        margin-top: 1rem;
+    }
+}
