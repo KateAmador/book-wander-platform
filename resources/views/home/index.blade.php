@@ -1,18 +1,22 @@
 @extends('layouts.app-master')
 
 @section('content')
+<h1 class="container text-center mt-5">Inicio</h1>
 
-    <h1 class="container">HOME</h1>
-
-    @auth
-    <p>Bienvenido {{auth()->user()->first_name }}</p>
-    <p>
-        <a href="/logout">Cerrar sesion</a>
-    </p>
-    @endauth
-
-    @guest
-    <p>Para ver el contenido <a href="/login">Iniciar sesion</a></p>
-    @endguest
-
+<div class="container mt-5">
+    <div class="row">
+        @foreach($books as $book)
+        <div class="col-md-3">
+            <div class="card mb-5">
+            <img src="{{ asset('storage/uploads/' . $book->image_path) }}" class="card-img-top" alt="Imagen del libro" style="width: 100%; height: auto;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">{{ $book->title }}</h5>
+                    <p class="card-text">{{ $book->author }}</p>
+                    <p class="card-text">Condición: {{ $book->condition }}</p>
+                </div>
+            </div>
+        </div>
+        @endforeach
+    </div>
+</div>
 @endsection
