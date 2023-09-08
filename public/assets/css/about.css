@@ -1,0 +1,70 @@
+.tittle {
+    color: #F6D25C;
+}
+
+.container-about {
+    margin: 3rem;
+    margin-top: 5rem;
+  }
+
+  .somos-imagen {
+    margin: 3rem 2rem 0 0;
+    max-width: 600px;
+  }
+
+  .somos-imagen2 {
+    margin: 3rem 3rem 0 0;
+    max-width: 670px;
+  }
+
+  .about {
+    flex-grow: 1;
+    margin: 3rem 3rem 0 3rem;
+    text-align: justify;
+  }
+
+  .about2 {
+    flex-grow: 1;
+    margin: 3rem 3rem 0 0;
+    text-align: justify;
+  }
+
+  strong {
+    color: #F6D25C;
+  }
+
+  .container1,
+  .container2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container-about {
+      display: block;
+    }
+
+    .container1,
+    .container2 {
+      margin-bottom: 2rem;
+    }
+
+    .somos-imagen,
+    .somos-imagen2 {
+      margin: 3rem auto 1rem;
+      max-width: 100%;
+    }
+
+    .about,
+    .about2 {
+      margin: 0 1.5rem 2rem;
+      text-align: start;
+    }
+
+    .container1,
+    .container2 {
+      display: block;
+      margin-bottom: 2rem;
+    }
+  }
