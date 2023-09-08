@@ -12,14 +12,19 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('books', function (Blueprint $table) {
+            $table->engine="InnoDB";
             $table->id();
             $table->string('title', 100);
             $table->string('author', 100);
-            $table->string('status', 50);
+            $table->string('condition', 100);
+            $table->boolean('status');
+            $table->string('image_path');
             $table->unsignedBigInteger('owner_id');
+            $table->unsignedBigInteger('category_id');
             $table->timestamps();
 
             $table->foreign('owner_id')->references('id')->on('users');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete("cascade");
         });
     }
 
