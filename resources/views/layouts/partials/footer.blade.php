@@ -42,7 +42,7 @@
                         <label>+57 318 000 0000</label>
                     </div>
                     <div class="row2">
-                        <label><a href="">Formulario de Contacto</a></label>
+                        <label><a href="{{ route('home.contact') }}">Formulario de Contacto</a></label>
                     </div>
                 </div>
             </div>

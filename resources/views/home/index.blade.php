@@ -1,7 +1,7 @@
 @extends('layouts.app-master')
 
 @section('content')
-<h1 class="container text-center mt-5">Inicio</h1>
+<h1 class="container text-center mt-5" style="color: #15326C;">Lista de Libros</h1>
 
 <div class="container mt-5">
     <div class="row">

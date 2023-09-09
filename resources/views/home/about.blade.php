@@ -6,7 +6,7 @@
 
 <div class="container1 mt-5">
     <section>
-        <img class="about-imagen" src="{{ url('assets/img/about1.jpg') }}" alt="libros">
+        <img class="about-imagen" src="{{ url('assets/img/about4.jpeg') }}" style="max-width: 100%;" alt="libros">
     </section>
 
     <section class="about">
@@ -44,7 +44,7 @@
         </p>
     </section>
     <section>
-        <img class="somos-imagen2" src="{{ url('assets/img/about2.webp') }}" alt="libros">
+        <img class="somos-imagen2" src="{{ url('assets/img/about3.jpeg') }}" style="max-height: 70%;" alt="libros">
     </section>
 </div>
 @endsection

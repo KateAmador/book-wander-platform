@@ -1,6 +1,10 @@
 footer {
     background-color: #15326c;
-    color: #fff;
+    color: #fff !important;
+}
+
+h3{
+    color: #fff !important;
 }
 
 .container-footer-all {

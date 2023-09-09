@@ -6,10 +6,10 @@
 @endsection
 
 @section('content')
-<section class="content container-fluid">
+<section class="content container-fluid col-12">
 
     @if ($message = Session::get('success'))
-    <div class="alert alert-success text-center col-md-4 mx-auto my-5">
+    <div class="alert alert-success text-center col-sm-12 mx-auto">
         <p>{{ $message }}</p>
     </div>
     @endif
@@ -22,7 +22,7 @@
             <div class="container-title">
                 <h1 class="title text-center mt-5">{{ __('Publicar') }} Libro</h1>
             </div>
-            <div class="container-body mt-5 p-4">
+            <div class="container-body">
 
                 <form method="POST" action="{{ route('books.store') }}" role="form" enctype="multipart/form-data">
                     @csrf
@@ -35,6 +35,7 @@
         </div>
     </div>
 </section>
-@include('layouts.partials.footer')
 @endsection
+
 @endauth
+

@@ -8,7 +8,7 @@
             <li><a href="/">Inicio</a></li>
             @guest
             <li><a href="{{ route('home.about') }}">Quienes Somos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="{{ route('home.contact') }}">Contacto</a></li>
             @endguest
             @auth
             <li><a href="#">Solicitudes</a></li>

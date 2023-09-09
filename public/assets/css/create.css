@@ -1,0 +1,30 @@
+.title {
+    color: #15326C;
+    margin: 0;
+    line-height: 100px;
+}
+
+.btn-action {
+    background-color: #f6d25c;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    text-decoration: none;
+}
+
+.btn-action:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+.btn-action:active {
+    scale: 0.95;
+}
+
+
