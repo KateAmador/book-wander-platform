@@ -16,13 +16,12 @@
 
     <main class="container-about">
         @yield('content')
-
-
     </main>
 
     <script src="{{ url('assets/js/jquery.min.js') }}"></script>
     <script src="{{ url('assets/js/bootstrap.bundle.min.js') }}"></script>
+    @include('layouts.partials.footer')
 </body>
-@include('layouts.partials.footer')
+
 
 </html>
