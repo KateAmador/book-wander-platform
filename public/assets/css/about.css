@@ -1,5 +1,5 @@
 .tittle {
-    color: #F6D25C;
+    color: #15326C;
 }
 
 .container-about {
@@ -30,7 +30,7 @@
   }
 
   strong {
-    color: #F6D25C;
+    color: #15326C;
   }
 
   .container1,
@@ -39,6 +39,7 @@
     justify-content: space-between;
     margin-bottom: 2rem;
   }
+
 
   @media screen and (max-width: 768px) {
     .container-about {
@@ -68,3 +69,4 @@
       margin-bottom: 2rem;
     }
   }
+
