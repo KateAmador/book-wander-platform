@@ -77,8 +77,6 @@ class BookController extends Controller
             $book->image_path = $imageName;
         }
 
-
-
         $book->save();
 
         return redirect()->route('books.create')
